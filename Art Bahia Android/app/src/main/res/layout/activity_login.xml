@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="fja.edu.com.artbahia.LoginActivity" >
+
+    <!-- Plano de Fundo -->
+    <ImageView
+        android:id="@+id/appCompatImageButton"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:ignore="ContentDescription" />
+
+    <!-- Máscra -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_black" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Label: Status -->
+        <TextView
+            android:id="@+id/login_status"
+            android:text=""
+
+            app:layout_constraintBottom_toTopOf="@id/login_username"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+
+            android:textColor="@android:color/white"
+            android:textAlignment="center" />
+
+        <!-- Input: Usuário -->
+        <EditText
+            android:id="@+id/login_username"
+            android:inputType="text"
+            android:hint="@string/username"
+
+            app:layout_constraintBottom_toTopOf="@id/login_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="16dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+            tools:layout_editor_absoluteX="19dp"
+
+            android:background="@drawable/gradient_gray_rounded"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:importantForAutofill="no" />
+
+        <!-- Input: Senha -->
+        <EditText
+            android:id="@+id/login_password"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+
+            app:layout_constraintBottom_toTopOf="@id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="36dp"
+            android:paddingStart="18dp"
+            android:paddingEnd="18dp"
+
+            android:background="@drawable/gradient_gray_rounded"
+            android:textColor="@android:color/white"
+            android:textColorHint="@android:color/white"
+            android:importantForAutofill="no" />
+
+        <!-- Botão: Login -->
+        <Button
+            android:id="@+id/btn_login"
+            android:text="@string/login"
+            android:onClick="OnLoginClick"
+
+            app:layout_constraintBottom_toTopOf="@id/login_btn_cadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="18dp"
+            android:layout_marginEnd="18dp"
+            android:layout_marginBottom="120dp"
+
+            android:background="@drawable/gradient_orange_rounded"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <!-- Botão: Registre-se -->
+        <Button
+            android:id="@+id/login_btn_cadastrar"
+            android:text="@string/register"
+            android:onClick="OnRegisterClick"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+
+            android:background="@drawable/button_orange"
+            android:textColor="@android:color/white"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

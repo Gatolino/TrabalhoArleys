@@ -1,0 +1,36 @@
+<resources>
+    <string name="alterar">Alterar</string>
+    <string name="app_name">Art Bahia</string>
+    <string name="ativo">Ativo</string>
+    <string name="cadastrar">Cadastrar</string>
+    <string name="consultar">Consultar</string>
+    <string name="deletar">Deletar</string>
+    <string name="editar">Editar</string>
+    <string name="frame">Quadro</string>
+    <string name="grafitti">Grafitti</string>
+    <string name="invalid_password">Senha deve ter pelo menos 4 caracteres</string>
+    <string name="invalid_username">Nome de usuário inválido</string>
+    <string name="isArtist">É artista ?</string>
+    <string name="like">Curtir</string>
+    <string name="login">Login</string>
+    <string name="login_failed">Falha no login!</string>
+    <string name="nameComplete">Nome Completo</string>
+    <string name="nome">Nome</string>
+    <string name="nome_obrigatorio">O nome deve ser informado</string>
+    <string name="password">Senha</string>
+    <string name="photography">Fotografia</string>
+    <string name="prompt_password">Senha</string>
+    <string name="register">Registre-se</string>
+    <string name="registerObra">Cadastro de Obra</string>
+    <string name="registroativo">Registro ativo: SIM</string>
+    <string name="registrodeletado">Registro excluido com sucesso!</string>
+    <string name="registroinativo">Registro ativo: NÃO</string>
+    <string name="salvar">Salvar</string>
+    <string name="salvo_ok">Registro salvo com sucesso</string>
+    <string name="sculpture">Escultura</string>
+    <string name="title">Título</string>
+    <string name="username">Usuário</string>
+    <string name="viuvo">Viuvo(a)</string>
+    <string name="voltar">Voltar</string>
+    <string name="welcome">"Bem vindo !"</string>
+</resources>

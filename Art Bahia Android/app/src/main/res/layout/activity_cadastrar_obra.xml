@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fja.edu.com.artbahia.CadastrarObraActivity">
+
+    <!-- Plano de Fundo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:ignore="ContentDescription" />
+
+    <!-- Máscra -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_black" />
+
+    <!-- Label: Título -->
+    <TextView
+        android:id="@+id/registerObra_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/registerObra"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/solid_darkgray"/>
+
+    <!-- Input: Título -->
+    <EditText
+        android:id="@+id/registerObra_Titulo"
+
+        app:layout_constraintTop_toBottomOf="@+id/registerObra_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:hint="@string/title"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gradient_gray_rounded"
+        android:importantForAutofill="no" />
+
+    <RadioGroup android:id="@+id/registerObra_group_tipos"
+        app:layout_constraintTop_toBottomOf="@+id/registerObra_Titulo"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:layout_margin="20dp" android:padding="20dp"
+        android:background="@drawable/gradient_gray_rounded" >
+
+            <RadioButton
+                android:id="@+id/cadRbQuadro"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:text="@string/frame" />
+
+            <RadioButton
+                android:id="@+id/cadRbQuadro2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:text="@string/sculpture" />
+
+            <RadioButton
+                android:id="@+id/cadRbQuadro3"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:text="@string/photography" />
+
+            <RadioButton
+                android:id="@+id/cadRbQuadro4"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:checked="false"
+                android:textColor="@android:color/white"
+                android:text="@string/grafitti" />
+    </RadioGroup>
+
+    <!-- Botão: Salvar -->
+    <Button
+        android:id="@+id/registerObra_btn_save"
+        android:onClick="OnSaveClick"
+
+        app:layout_constraintTop_toBottomOf="@+id/registerObra_group_tipos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/salvar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_orange_rounded" />
+
+    <!-- Label: Título -->
+    <TextView
+        android:id="@+id/registerObra_status"
+
+        app:layout_constraintTop_toBottomOf="@+id/registerObra_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

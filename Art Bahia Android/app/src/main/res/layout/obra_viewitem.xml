@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="0dp"
+    android:paddingBottom="20dp" >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:background="@color/cardview_light_background" >
+
+        <TextView
+            android:id="@+id/obraView_Titulo"
+            android:text="0000 - Título da Obra"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/obraView_Tipo"
+            android:text="Tipo: Fotografia"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/obraView_Curtidas"
+            android:text="Curtidas: 0"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            tools:ignore="HardcodedText"/>
+
+        <Button
+            android:id="@+id/obraView_btn_Curtir"
+            android:text="@string/like"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/button_orange_rounded"
+            style="?android:attr/button" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fja.edu.com.artbahia.CadastrarUsuarioActivity">
+
+    <!-- Plano de Fundo -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/background"
+        tools:ignore="ContentDescription" />
+
+    <!-- Máscra -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_black" />
+
+    <!-- Label: Título -->
+    <TextView
+        android:id="@+id/register_title"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="5dp"
+        android:text="@string/register"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        tools:ignore="MissingConstraints"
+        android:background="@drawable/solid_darkgray"/>
+
+    <!-- Input: Nome Completo -->
+    <EditText
+        android:id="@+id/register_name"
+
+        app:layout_constraintTop_toBottomOf="@+id/register_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:layout_marginStart="18dp"
+        android:hint="@string/nameComplete"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gradient_gray_rounded"
+        android:importantForAutofill="no" />
+
+    <!-- Input: Usuário -->
+    <EditText
+        android:id="@+id/register_username"
+
+        app:layout_constraintTop_toBottomOf="@+id/register_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:hint="@string/username"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:imeOptions="actionDone"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gradient_gray_rounded"
+        android:importantForAutofill="no" />
+
+    <!-- Input: Senha -->
+    <EditText
+        android:id="@+id/register_password"
+
+        app:layout_constraintTop_toBottomOf="@+id/register_username"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="18dp"
+        android:hint="@string/password"
+        android:paddingStart="18dp"
+        android:paddingEnd="18dp"
+        android:imeOptions="actionDone"
+        android:inputType="textPassword"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:layout_marginEnd="18dp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/gradient_gray_rounded"
+        android:importantForAutofill="no" />
+
+    <!-- Input: É artista? -->
+    <CheckBox
+        android:id="@+id/register_isArtist"
+
+        app:layout_constraintTop_toBottomOf="@+id/register_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/isArtist"
+        android:layout_marginTop="36dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="280dp"
+        android:background="@drawable/solid_gray"
+        android:textColor="@android:color/white" />
+
+    <!-- Botão: Salvar -->
+    <Button
+        android:id="@+id/register_btn_save"
+        android:onClick="OnSaveClick"
+
+        app:layout_constraintTop_toBottomOf="@+id/register_isArtist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginEnd="18dp"
+        android:text="@string/salvar"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="36dp"
+        android:background="@drawable/button_orange_rounded" />
+
+    <!-- Label: Título -->
+    <TextView
+        android:id="@+id/register_status"
+
+        app:layout_constraintTop_toBottomOf="@+id/register_btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
